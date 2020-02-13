@@ -1,3 +1,19 @@
-header a {
+body {
+  margin: 0;
+}
+
+header li {
   list-style-type: none;
+}
+
+#back {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#content {
+  padding: 8px;
+  display: block;
 }
