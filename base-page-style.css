@@ -14,7 +14,8 @@ header {
 
 header li {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
+  width: calc((100%/9));
 }
 
 header li a {
