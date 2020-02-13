@@ -72,8 +72,8 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">Info</a>
+  <a href="Home.html">Home</a>
+  <a href="News.html">Info</a>
   <div class="dropdown">
     <button class="dropbtn">Others 
       <i class="fa fa-caret-down"></i>
