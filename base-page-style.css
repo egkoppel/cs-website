@@ -46,9 +46,39 @@ header a:hover {
 }
 
 #content {
-  padding: 8px;
   position: absolute;
   left: 0;
   top: 30px;
   z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100vw - 32px);
+  padding: 16px;
+}
+
+h1 {
+  flex-grow: 2;
+  width: 100vw;
+}
+
+#facts {
+  justify-self: left;
+  flex-grow: 1;
+}
+
+#main-body {
+  flex-grow: 2;
+  width: 100vw;
+  text-align: justify;
+}
+
+#form {
+  justify-self: right;
+  flex-grow: 1;
+}
+
+input {
+  float: right;
 }
