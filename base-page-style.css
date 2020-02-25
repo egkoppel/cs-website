@@ -73,6 +73,15 @@ h1 {
 
 #facts {
   justify-self: left;
+  border-radius: 10px;
+  background-color: #dedede;
+  border-width: 1px;
+  border-color: #999999;
+  border-style: solid;
+}
+
+#facts ul {
+  padding:32px;
 }
 
 #main-body {
