@@ -60,6 +60,12 @@ header a:hover {
   overflow-y: scroll;
 }
 
+#main-img {
+  border-radius: 10px;
+  width: 20vw;
+  float: right;
+}
+
 h1 {
   flex-grow: 2;
   width: 100vw;
