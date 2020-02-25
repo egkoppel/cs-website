@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 header {
@@ -42,7 +43,7 @@ header a:hover {
   left: 0;
   top: 30px;
   z-index: 1;
-  filter: blur(5px);
+  filter: blur(5px) opacity(50%);
 }
 
 #content {
@@ -56,6 +57,7 @@ header a:hover {
   justify-content: space-between;
   width: calc(100vw - 32px);
   padding: 16px;
+  overflow-y: scroll;
 }
 
 h1 {
