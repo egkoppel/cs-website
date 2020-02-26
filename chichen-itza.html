@@ -1,6 +1,14 @@
 <html>
 	<head>
 		<link href="base-page-style.css" rel="stylesheet" type="text/css">
+
+		<script>
+			function checkForm() {
+				if (document.getElementById("dd").value.length != 2 || document.getElementById("dm").value.length != 2 || document.getElementById("dy").value.length != 2 || isNaN(document.getElementById("dd").value) || isNaN(document.getElementById("dm").value) || isNaN(document.getElementById("dy").value)) {
+					alert("Error with form")
+				}
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -32,17 +40,17 @@
 				<p>Chichén Itzá, ruined ancient Maya city occupying an area of 4 square miles (10 square km) in south-central Yucatán state, Mexico. It is located some 90 miles (150 km) east-northeast of Uxmal and 75 miles (120 km) east-southeast of the modern city of Mérida. The only source of water in the arid region around the site is from wells (cenotes) formed by sinkholes in limestone formations. Two big cenotes on the site made it a suitable place for the city and gave it its name, from chi (“mouths”), chen (“wells”), and Itzá, the name of the Maya tribe that settled there. Chichén Itzá was designated a UNESCO World Heritage site in 1988.</p>
 				<p>Chichén was founded about the 6th century CE, presumably by Maya peoples of the Yucatán Peninsula who had occupied the region since the Pre-Classic, or Formative, Period (1500 BCE–300 CE). The principal early buildings are in an architectural style known as Puuc, which shows a number of divergences from the styles of the southern lowlands. These earliest structures are to the south of the Main Plaza and include the Akabtzib (“House of the Dark Writing”), the Chichanchob (“Red House”), the Iglesia (“Church”), the Casa de las Monjas (“Nunnery”), and the observatory El Caracol (“The Snail”). There is evidence that, in the 10th century, after the collapse of the Maya cities of the southern lowlands, Chichén was invaded by foreigners, probably Maya speakers who had been strongly influenced by—and perhaps were under the direction of—the Toltec of central Mexico. These invaders may have been the Itzá for whom the site is named; some authorities, however, believe the Itzá arrived 200 to 300 years later.</p>
 			</div>
-			<form id="form">
+			<form id="form" onsubmit="checkForm()">
 				<input type="text" placeholder="First name"/>
 				<input type="text" placeholder="Last name"/>
-				<input type="text" placeholder="Email address"/>
+				<input type="text" id="email" placeholder="Email address"/>
 				<div id="form-date">
-					<input type="text" placeholder="DD"/>
-					<input type="text" placeholder="MM"/>
-					<input type="text" placeholder="YY"/>
+					<input type="text" id="dd" placeholder="DD"/>
+					<input type="text" id="dm" placeholder="MM"/>
+					<input type="text" id="dy" placeholder="YY"/>
 				</div>
 				<textarea placeholder="Your memories"></textarea>
-				<button>Submit</button>
+				<input type="submit">Submit</input>
 			</form>
 		</div>
 	</body>

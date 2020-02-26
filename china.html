@@ -1,6 +1,13 @@
 <html>
 	<head>
 		<link href="base-page-style.css" rel="stylesheet" type="text/css">
+		<script>
+			function checkForm() {
+				if (document.getElementById("dd").value.length != 2 || document.getElementById("dm").value.length != 2 || document.getElementById("dy").value.length != 2 || isNaN(document.getElementById("dd").value) || isNaN(document.getElementById("dm").value) || isNaN(document.getElementById("dy").value)) {
+					alert("Error with form")
+				}
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -30,7 +37,7 @@
 		
 			</div>
 			
-			<form id="form">
+			<form id="form" onsubmit="checkForm()">
 				<input type="text" placeholder="First name"/>
 				<input type="text" placeholder="Last name"/>
 				<input type="text" placeholder="Email address"/>
@@ -40,7 +47,7 @@
 					<input type="text" placeholder="YY"/>
 				</div>
 				<textarea placeholder="Your memories"></textarea>
-				<button>Submit</button>
+				<input type="submit">Submit</input>
 			</form>
 		</div>
 	</body>

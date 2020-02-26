@@ -2,6 +2,13 @@
 	<head>
 	</head>
 		<link href="base-page-style.css" rel="stylesheet" type="text/css">
+		<script>
+			function checkForm() {
+				if (document.getElementById("dd").value.length != 2 || document.getElementById("dm").value.length != 2 || document.getElementById("dy").value.length != 2 || isNaN(document.getElementById("dd").value) || isNaN(document.getElementById("dm").value) || isNaN(document.getElementById("dy").value)) {
+					alert("Error with form")
+				}
+			}
+		</script>
 	<body>
 		<header>
 			<a href="index.html">Homepage</a>
@@ -35,7 +42,7 @@
 			<p>Each massive pyramid is but one part of a larger complex, including a palace, temples, solar boat pits, and other features. and a reference to the Fourth Dynasty Egyptian pharaoh Khufu, some Egyptologists believe that the pyramid was thus built as a tomb, taking 10 to 20 years to build. The Great Pyramid has three known chambers in it, however the lowest chamber is unfinished. </p>
 		
 			</div>
-			<form id="form">
+			<form id="form" onsubmit="checkForm()">
 				<input type="text" placeholder="First name"/>
 				<input type="text" placeholder="Last name"/>
 				<input type="text" placeholder="Email address"/>
@@ -45,7 +52,7 @@
 					<input type="text" placeholder="YY"/>
 				</div>
 				<textarea placeholder="Your memories"></textarea>
-				<button>Submit</button>
+				<input type="submit">Submit</input>
 			</form>
 		</div>
 	</body>
