@@ -3,7 +3,7 @@
 		<link href="base-page-style.css" rel="stylesheet" type="text/css">
 		<script>
 			function checkForm() {
-				if (document.getElementById("dd").value.length != 2 || document.getElementById("dm").value.length != 2 || document.getElementById("dy").value.length != 2 || isNaN(document.getElementById("dd").value) || isNaN(document.getElementById("dm").value) || isNaN(document.getElementById("dy").value)) {
+				if (document.getElementById("dd").value.length != 2 || document.getElementById("dm").value.length != 2 || document.getElementById("dy").value.length != 2 || isNaN(document.getElementById("dd").value) || isNaN(document.getElementById("dm").value) || isNaN(document.getElementById("dy").value) || !document.getElementById("email").contains("@") || !document.getElementById("email").contains(".")) {
 					alert("Error with form")
 				}
 			}
